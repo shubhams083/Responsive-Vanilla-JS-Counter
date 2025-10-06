@@ -22,3 +22,8 @@ Features glowing buttons, smooth animations, and real-time updates with incremen
 ---
 
 ## 📂 Project Structure
+counter-app/
+│
+├── index.html # Main HTML file
+├── style.css # Custom styles
+└── script.js # Counter logic
