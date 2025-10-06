@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Vanilla JS Counter</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Inter Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Main Counter Card -->
+  <main id="counter-app" class="glow-card w-full max-w-lg p-8 sm:p-12 text-center">
+    <!-- Header -->
+    <header class="mb-8">
+      <h1 class="text-3xl sm:text-4xl font-extrabold text-white mb-2">
+        Interactive Counter
+      </h1>
+      <p class="text-sm text-gray-400">Vanilla JS & Responsive Design</p>
+    </header>
+
+    <!-- Count Display -->
+    <div class="mb-10 p-6">
+      <output id="count-display" class="count-display select-none">0</output>
+    </div>
+
+    <!-- Buttons -->
+    <section class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+      <button id="decrement-btn" class="counter-btn secondary-btn order-2 sm:order-1" aria-label="Decrement count">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M20 12H4" />
+        </svg>
+        Decrement
+      </button>
+
+      <button id="reset-btn" class="counter-btn reset-btn order-3 sm:order-2" aria-label="Reset count to zero">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+        </svg>
+        Reset
+      </button>
+
+      <button id="increment-btn" class="counter-btn primary-btn order-1 sm:order-3" aria-label="Increment count">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+        </svg>
+        Increment
+      </button>
+    </section>
+  </main>
+
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>
